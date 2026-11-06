@@ -1,0 +1,160 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef3f8;
+    color: #14283d;
+}
+
+header {
+    background: #102c46;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+header p {
+    font-size: 19px;
+}
+
+.container {
+    max-width: 850px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #0002;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 220px;
+    padding: 18px;
+    font-size: 21px;
+    border: 2px solid #315a7c;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+button, select {
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+}
+
+button:focus, textarea:focus, select:focus {
+    outline: 4px solid #f5a623;
+    outline-offset: 3px;
+}
+
+.ouvir {
+    background: #087bce;
+    color: white;
+}
+
+.pausar {
+    background: #e5a900;
+    color: #171717;
+}
+
+.parar {
+    background: #bd3030;
+    color: white;
+}
+
+.continuar {
+    background: #21834b;
+    color: white;
+}
+
+.configuracoes {
+    margin-top: 25px;
+}
+
+.configuracoes label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+select {
+    padding: 10px;
+    width: 100%;
+    margin-top: 8px;
+    border-radius: 7px;
+}
+
+.status {
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #126b3b;
+}
+
+footer {
+    background: #102c46;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Alto contraste */
+
+body.alto-contraste {
+    background: black;
+    color: white;
+}
+
+.alto-contraste .container {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.alto-contraste textarea,
+.alto-contraste select {
+    background: black;
+    color: white;
+    border: 2px solid yellow;
+}
+
+/* Celulares */
+
+@media(max-width: 600px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    .container {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
